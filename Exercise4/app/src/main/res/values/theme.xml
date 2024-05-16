@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme1"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme2"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark1</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor1</item>
+        <item name="colorAccent">@color/colorAccent1</item>
+        <item name="android:windowBackground">@color/myWindowBackground</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary1</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary1</item>
+    </style>
+</resources>

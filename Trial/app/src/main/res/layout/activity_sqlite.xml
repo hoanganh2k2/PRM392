@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLiteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/StudentIdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:text="ID"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/IdET"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_toEndOf="@+id/StudentNameTV"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/StudentNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudentIdTV"
+        android:text="Name"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/NameET"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/StudentIdTV"
+        android:layout_toEndOf="@+id/StudentNameTV"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/StudentEmailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudentNameTV"
+        android:text="Email"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/EmailET"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/StudentNameTV"
+        android:layout_toEndOf="@+id/StudentNameTV"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StudentEmailTV"
+        android:text="Add"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/label"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/AddBtn"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/idtv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/nametv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Name"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/emailtv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Email"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label" />
+</RelativeLayout>
